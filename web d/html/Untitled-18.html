@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>                                                                      <!--boiler plate-->
+<!-- use MDN as u need -->
+ <html lang="en">
+ <head>                                                                               <!--meta data-->
+    <meta charset="UTF-8">                                                             <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic</title>
+</head>
+    <body>
+        <p><h1>starting out</h1></p>
+        <ul>                                                                           <!--unorderd list-->
+            <li>i</li>                                                                  <!--list items-->
+            <li>i</li>
+            <li>i</li>
+        </ul>
+        <ol type="A">                                                           <!--- ordered list with letters--->
+            <li>i</li>
+            <li>i</li>
+            <li>i</li>
+        </ol>
+        <p>for going on google</p>
+         <a href= "https://google.com">Google </a>
+         <p>for going on netflix</p>
+         <a href="https://www.netflix.com/in/">Netflix</a>
+         <br><hr>
+         <p>photo</p>
+         <img src="https://media.istockphoto.com/id/1295274245/photo/random-multicolored-spheres-computer-generated-abstract-form-of-large-and-small-balls-3d.jpg?s=612x612&w=0&k=20&c=q7NOl28YxIIOqKu6em50VlKrg6ISFyVww_nLOCr5W_A=" alt="random" height="100px" width="100px"><hr>
+         <b>bold </b><i>italic </i><u>underline </u><br> shortcut for comment in HTML is (ctrl+/ ) and so is to remove<br><br>
+         <div>                                                       <!--block 1 thing in 1 line-->
+            <a href="www.google.com">Google</a>
+            <a href="ww.youtube.com">Youtube</a>
+          </div>
+          <span>                                                       <!--inline more thing i 1 line -->
+            <a href="www.google.com">Google</a></span>
+          <a href="ww.youtube.com">Youtube</a>
+          <h1>
+            Pythagoras theorem says a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+          </h1>
+          <h1> Formula for glucose is C<sub>6</sub>H<sub>12</sub>0<sub>6</sub></h1>
+ <!--sematic markup: more readable as it has its whole name,easy to understand SEO(search engine optimization) friendly,screen reader frindly ex header footer main nav(navigation one page to another) article section aside-->
+    <!--html entities normal form &***; use ti make normal things &nbsp for space and &hearts; for heart &lt; for < and &gt; for > -->      
+    <p>a &lt; b</p>
+    <p>a &gt; b</p>
+    <p>a &amp; b</p>
+    <p>a &quot;b&quot;</p>
+    <h1>&bigstar;</h1>
+   
+<table border="black">
+    <caption>
+      food menu
+    </caption>
+    <!--table header and table row-->
+    <thead><tr><!--tablerow-->
+      <th>food</th><!--table heading-->
+      <th>price</th>
+    </tr>
+  </thead>
+    <tbody><tr>
+      <td>frooti</td><!--table display-->
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>some</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+    <tfoot></tfoot>
+</table>
+<table border="black">
+<caption>test</caption>
+ <tr>
+ <td rowspan="2">dss  </td>
+ <td colspan="2">average</td> 
+ <td rowspan="2">red eyes</td>
+</tr>
+<tr>
+<td>height</td>
+<td>weight</td>
+</tr>
+<tr>
+  <td>males</td>
+  <td>1.9</td>
+  <td>0.003%</td>
+  <td>40%</td>
+</tr>
+<tr>
+  <td>females</td>
+  <td>1.9</td>
+  <td>0.003%</td>
+  <td>40%</td>
+</tr>
+</table>
+
+<button type="submit">hello</button>                               <!--outside form thus no info sumitted-->
+<form action="/server">                                            <!--outside file where info goes-->   
+  <div>
+    <label for="username">Username : </label>                       <!--attached things to other  elements with the same name using for and id-->
+    <input type="text" placeholder="enter username" id="username" /> <!--placeholder uk-->
+  </div>
+  <div>
+    <label for="password">Password : </label>
+    <input type="password" placeholder="enter password" id="password" />
+  </div>
+  <div>
+    <label for="age">Enter Age : </label>
+    <input type="number" placeholder="age" id="age" />
+  </div>
+  <button type="submit">Submit</button>
+  <button type="button">hello</button>
+  <button type="reset">reset</button>
+  <!-- <button type="menu">Submit</button> -->
+
+
+  <br />
+  </form>
+
+  
+ </body>
+ </html>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <form>
+  <div>
+    <input type="radio" name="fruit" id="apple" value="apple"/>
+    <label for="apple">Apple</label>
+    <input type="radio" name="fruit" id="mango" value="mango"/>
+    <label for="mango">mango</label>
+    <input type="radio" name="fruit" id="banana" value="banana"/>
+    <label for="banana">banana</label>
+  </div>
+  <br>
+  <div>
+    choose your subject
+   <input type="checkbox" id="math" name="sub" value ="math">
+   <label for="math">math</label>
+   <input type="checkbox" id="science" name="sub" value ="science">
+   <label for="science">science</label>
+   <input type="checkbox" id="english"name ="sub"value="eng">
+   <label for="english">english</label>
+
+  </div>
+  <div>
+    choose your profession
+    <select name="profession" id="profession">
+    <option>select your option </option>  
+    <option value="doctor">Doctor</option>
+    <option value="stu">student</option>
+    </select>
+
+  </div>
+  <label for="vol">Select your volume level : </label>
+  <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="70" /><br/>
+
+  <button>submit</button>
+</form>
+
+ </body>
+ </html>

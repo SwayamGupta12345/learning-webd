@@ -1,5 +1,5 @@
 /* section{
-  margin-top: 100px;} */
+  margin-top: 100px;} 
 div{
   width: 200px;
   height: 50px;
@@ -8,7 +8,7 @@ div{
   border: 2px solid black;
   margin: 10px auto;
   box-shadow: 2px 2px 8px black;}
-/* div:nth-of-type(2n) {
+div:nth-of-type(2n) {
   background-color: #f7db6a;}
 div:nth-of-type(3n) {
   background-color: #ebb02d;} 
@@ -23,4 +23,28 @@ div:nth-of-type(3n) {
  }
 #four{
    transform: skew(30deg);}
-#five{transform: rotate(30deg) translateX(150px);}*/
+#five{transform: rotate(30deg) translateX(150px);} */
+
+
+div{
+   height: 100px;
+  width: 100px;
+  background-color:green;
+   text-align: center;
+   border: 3px solid
+                       black;
+  margin: 20px;
+  display: inline-block;}
+#static{
+  background-color:
+                       yellow;
+   position: static;
+   top: 100px;
+   left: 100px;}
+#relative{
+  background-color:
+                       yellow;
+   position: relative;
+   top: 100px;
+   left: 100px;}
+/* fixed absolute bhi hota hai */
